@@ -1,0 +1,45 @@
+$small: 300px;
+$medium: 900px;
+.profile-header {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  &--hello {
+    width: 90%;
+    @media (min-width: $medium) {
+      width: 50%;
+    }
+    &__title {
+      font-size: 2.5rem;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+  }
+  &__photo {
+    background-image: url("./../../assets/devan.png");
+    width: 20rem;
+    height: 20rem;
+    margin-left: 2rem;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+  }
+  .button-55 {
+    margin: 2px;
+  }
+}
+.social-icons {
+  /* width: 2rem; */
+  /* height: 2rem; */
+  border: 1px solid #000;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 0.3s;
+  /* display: flex; */
+  box-shadow: 2px 2px #000;
+  font-size: larger;
+}
