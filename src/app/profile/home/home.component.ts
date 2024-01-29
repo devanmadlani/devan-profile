@@ -8,13 +8,13 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-home',
   standalone: true,
   imports: [FontAwesomeModule],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss',
 })
-export class HeaderComponent {
+export class HomeComponent {
   faLinkedin = faLinkedin;
   faGithub = faGithub;
   faFacebook = faFacebook;
