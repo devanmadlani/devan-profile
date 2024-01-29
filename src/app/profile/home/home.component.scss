@@ -5,7 +5,7 @@ $medium: 900px;
   flex-wrap: wrap-reverse;
   align-items: center;
   justify-content: center;
-  height: 80%;
+  min-height: 700px;
   &--hello {
     width: 90%;
     @media (min-width: $medium) {
