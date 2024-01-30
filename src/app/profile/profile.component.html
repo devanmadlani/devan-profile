@@ -1,9 +1,21 @@
 <div class="content">
   <div class="content__header">
-    <button class="button-55 active" role="button" [routerLink]="['']">
+    <button
+      class="button-55"
+      role="button"
+      [routerLink]="['./']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       Home
     </button>
-    <button class="button-55" role="button" [routerLink]="['/work']">
+    <button
+      class="button-55"
+      role="button"
+      [routerLink]="['work']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       Work
     </button>
   </div>
