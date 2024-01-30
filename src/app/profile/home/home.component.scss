@@ -15,16 +15,22 @@ $medium: 900px;
       font-size: 2.5rem;
       font-weight: 500;
       line-height: 1.2;
+      &__frontend {
+      }
     }
   }
-  &__photo {
+  &--photo {
     background-image: url("./../../assets/devan.png");
-    width: 20rem;
-    height: 20rem;
+    width: 12rem;
+    height: 12rem;
     margin-left: 2rem;
     background-size: cover;
     background-position: top center;
     border-radius: 50%;
+    @media (min-width: $medium) {
+      width: 20rem;
+      height: 20rem;
+    }
   }
   .button-55 {
     margin: 2px;
