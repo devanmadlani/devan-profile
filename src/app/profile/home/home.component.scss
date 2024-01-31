@@ -1,12 +1,12 @@
 $small: 300px;
 $medium: 900px;
-.profile-header {
+.home {
   display: flex;
   flex-wrap: wrap-reverse;
   align-items: center;
   justify-content: center;
   min-height: 700px;
-  &--hello {
+  &--content {
     width: 90%;
     @media (min-width: $medium) {
       width: 50%;
