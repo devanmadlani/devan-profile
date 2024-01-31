@@ -1,0 +1,15 @@
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    border: 1px solid black;
+    margin: 4px;
+    padding: 10px;
+    background-color: #dbfffe;
+    box-shadow: black 2px 2px 3px 0px;
+  }
+}
+fieldset {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}

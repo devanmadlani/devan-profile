@@ -1,0 +1,13 @@
+$small: 300px;
+$medium: 900px;
+.work {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @media (min-width: $medium) {
+    width: 50%;
+  }
+}
+.extra-details {
+  display: flex;
+}

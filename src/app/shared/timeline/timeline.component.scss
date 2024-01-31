@@ -1,0 +1,39 @@
+$small: 300px;
+$medium: 900px;
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: #181818;
+  top: 0;
+  bottom: 0;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 5px 2px 0;
+  position: relative;
+  background-color: inherit;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid;
+  border-bottom-right-radius: 225px 15px;
+  border-top-right-radius: 15px 225px;
+  background-color: #ffffe7;
+  box-shadow: #454545 2px 4px 6px -2px;
+}
+.work-title {
+  font-weight: bold;
+}
