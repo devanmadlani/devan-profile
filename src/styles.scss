@@ -86,12 +86,14 @@ body {
 }
 
 .circle-border {
+  border: 1px solid black;
   border-top-left-radius: 185px 160px;
   border-top-right-radius: 200px 195px;
   border-bottom-right-radius: 160px 195px;
   border-bottom-left-radius: 185px 190px;
 }
 .square-border {
+  border: 1px solid black;
   border-bottom-left-radius: 15px 255px;
   border-bottom-right-radius: 225px 15px;
   border-top-left-radius: 255px 15px;

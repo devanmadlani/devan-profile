@@ -6,11 +6,12 @@ import {
   faInstagram,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons';
+import { WorkComponent } from '../work/work.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, WorkComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

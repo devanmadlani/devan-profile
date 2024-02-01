@@ -5,7 +5,10 @@ $medium: 900px;
   flex-wrap: wrap-reverse;
   align-items: center;
   justify-content: center;
-  min-height: 700px;
+  margin: 20px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  // min-height: 700px;
   &--content {
     width: 90%;
     @media (min-width: $medium) {
@@ -20,7 +23,7 @@ $medium: 900px;
     }
   }
   &--photo {
-    background-image: url("./../../assets/devan.png");
+    background-image: url("../../../assets/devan.png");
     width: 12rem;
     height: 12rem;
     margin-left: 2rem;
@@ -28,8 +31,8 @@ $medium: 900px;
     background-position: top center;
     border-radius: 50%;
     @media (min-width: $medium) {
-      width: 20rem;
-      height: 20rem;
+      width: 15rem;
+      height: 15rem;
     }
   }
   .button-55 {
@@ -45,4 +48,7 @@ $medium: 900px;
   transition-duration: 0.3s;
   box-shadow: 2px 2px #000;
   font-size: larger;
+}
+.download-cv {
+  background: #d7e8fa;
 }
