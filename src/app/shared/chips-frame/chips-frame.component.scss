@@ -1,11 +1,12 @@
 .chips {
   display: flex;
   flex-wrap: wrap;
+
   div {
-    border: 1px solid white;
     margin: 4px;
     padding: 10px;
-    // background-color: #dbfffe;
+    border: none;
+    border-bottom: 1px solid;
     background-color: white;
   }
 }

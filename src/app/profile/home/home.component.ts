@@ -6,6 +6,7 @@ import {
   faInstagram,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons';
+import { faLocation, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { WorkComponent } from '../work/work.component';
 
 @Component({
@@ -20,4 +21,5 @@ export class HomeComponent {
   faGithub = faGithub;
   faFacebook = faFacebook;
   faInstagram = faInstagram;
+  faLocation = faLocationDot;
 }

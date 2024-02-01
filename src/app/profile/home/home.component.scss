@@ -6,7 +6,7 @@ $medium: 900px;
   align-items: center;
   justify-content: center;
   margin: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   margin-top: 25px;
   // min-height: 700px;
   &--content {
@@ -16,14 +16,13 @@ $medium: 900px;
     }
     &__title {
       font-size: 2.5rem;
-      font-weight: 500;
       line-height: 1.2;
       &__frontend {
       }
     }
   }
   &--photo {
-    background-image: url("../../../assets/devan.png");
+    background-image: url("../../assets/devan.png");
     width: 12rem;
     height: 12rem;
     margin-left: 2rem;
