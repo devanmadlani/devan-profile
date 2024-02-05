@@ -4,9 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
-    "github-build": "ng build --configuration production --output-path docs",
     "test": "ng test"
   },
   "private": true,
