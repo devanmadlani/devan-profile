@@ -25,6 +25,7 @@ import { ContactForm } from '../../models/contact-form';
 })
 export class ContactComponent {
   isSubmitted = false;
+  submitting = false;
   constructor(private email: EmailService) {}
   contactForm = new FormGroup({
     name: new FormControl(''),
@@ -33,9 +34,16 @@ export class ContactComponent {
     message: new FormControl('', Validators.required),
   });
 
-  contactMe() {
+  async contactMe() {
     if (this.contactForm.invalid) return;
-    this.isSubmitted = true;
-    this.email.sendEmail(this.contactForm.getRawValue() as ContactForm);
+    this.submitting = true;
+    try {
+      await this.email.sendEmail(this.contactForm.getRawValue() as ContactForm);
+      this.submitting = false;
+      this.isSubmitted = true;
+    } catch (error) {
+      this.submitting = false;
+      this.isSubmitted = false;
+    }
   }
 }

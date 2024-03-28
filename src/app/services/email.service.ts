@@ -1,5 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Firestore, addDoc, collection } from '@angular/fire/firestore';
+import {
+  DocumentReference,
+  Firestore,
+  addDoc,
+  collection,
+} from '@angular/fire/firestore';
 import { ContactForm } from '../models/contact-form';
 
 @Injectable({
@@ -9,8 +14,8 @@ export class EmailService {
   // fireStore: Firestore = inject(Firestore);
   constructor(private firestore: Firestore) {}
 
-  sendEmail(contactForm: ContactForm) {
+  sendEmail(contactForm: ContactForm): Promise<DocumentReference> {
     const contactCollecton = collection(this.firestore, 'contact');
-    addDoc(contactCollecton, contactForm);
+    return addDoc(contactCollecton, contactForm);
   }
 }

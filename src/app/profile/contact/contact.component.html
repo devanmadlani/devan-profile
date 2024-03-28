@@ -29,11 +29,12 @@
     </mat-form-field>
     <div class="contact-form--button-container">
       <button
+        [disabled]="submitting"
         class="button-55 contact-button"
         role="button"
         (click)="contactMe()"
       >
-        Send message
+        {{ submitting ? "Please wait..." : "Send message" }}
       </button>
     </div>
   </form>
