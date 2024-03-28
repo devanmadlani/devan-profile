@@ -1,4 +1,9 @@
 import { Injectable } from '@angular/core';
+import {
+  Auth,
+  UserCredential,
+  signInWithEmailAndPassword,
+} from '@angular/fire/auth';
 
 declare var gapi: any;
 
@@ -6,22 +11,13 @@ declare var gapi: any;
   providedIn: 'root',
 })
 export class AuthServiceService {
-  constructor() {}
+  constructor(public firebaseAuth: Auth) {}
 
-  // initGoogleOAuth(): Promise<any> {
-  //   return new Promise((resolve, reject) => {
-  //     gapi.load(
-  //       'auth2',
-  //       async () => {
-  //         const gAuth = await gapi.auth2.init({
-  //           client_id: environment.GAPI_CLIENT_ID,
-  //           fetch_basic_profile: true,
-  //           scope: 'profile email',
-  //         });
-  //         resolve(gAuth);
-  //       },
-  //       reject
-  //     );
-  //   });
-  // }
+  login(user: { email: string; password: string }): Promise<UserCredential> {
+    return signInWithEmailAndPassword(
+      this.firebaseAuth,
+      user.email,
+      user.password
+    );
+  }
 }
