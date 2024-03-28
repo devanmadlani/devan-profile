@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
+import { ContactComponent } from './profile/contact/contact.component';
 import { HomeComponent } from './profile/home/home.component';
 import { ProfileComponent } from './profile/profile.component';
-import { WorkComponent } from './profile/work/work.component';
-import { ContactComponent } from './profile/contact/contact.component';
+import { LoginComponent } from './profile/login/login.component';
 
 export const routes: Routes = [
   {
@@ -11,6 +11,7 @@ export const routes: Routes = [
     children: [
       { path: '', component: HomeComponent },
       { path: 'contact', component: ContactComponent },
+      { path: 'login', component: LoginComponent },
     ],
   },
 ];

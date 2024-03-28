@@ -1,4 +1,4 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import {
   FormControl,
@@ -7,19 +7,13 @@ import {
   Validators,
 } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
-import { EmailService } from '../../services/email.service';
-import { FirestoreModule } from '@angular/fire/firestore';
 import { ContactForm } from '../../models/contact-form';
+import { EmailService } from '../../services/email.service';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [
-    ReactiveFormsModule,
-    MatInputModule,
-    HttpClientModule,
-    FirestoreModule,
-  ],
+  imports: [ReactiveFormsModule, MatInputModule, HttpClientModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })

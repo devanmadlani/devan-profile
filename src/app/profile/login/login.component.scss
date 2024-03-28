@@ -1,0 +1,18 @@
+$small: 300px;
+$medium: 900px;
+.login-form {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  @media (min-width: $medium) {
+    width: 60%;
+  }
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.example-full-width {
+  width: 100%;
+}
