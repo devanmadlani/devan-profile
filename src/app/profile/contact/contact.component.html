@@ -1,0 +1,45 @@
+<div class="contact-form">
+  <div class="contact-form--title">Get in touch</div>
+  @if (!isSubmitted) {
+  <form [formGroup]="contactForm">
+    <mat-form-field class="example-full-width">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Name" formControlName="name" />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input
+        type="email"
+        matInput
+        formControlName="email"
+        placeholder="Ex. pat@example.com"
+      />
+      @if (contactForm.get('email')?.hasError('email') &&
+      !contactForm.get('email')?.hasError('required')) {
+      <mat-error>Please enter a valid email address</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Subject</mat-label>
+      <input matInput placeholder="Subject" formControlName="subject" />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Message</mat-label>
+      <textarea matInput formControlName="message" rows="10"></textarea>
+    </mat-form-field>
+    <div class="button-container">
+      <button
+        class="button-55 contact-button"
+        role="button"
+        (click)="contactMe()"
+      >
+        Send message
+      </button>
+    </div>
+  </form>
+  }@else {
+  <div class="contact-form--sucess square-border">
+    Thank you! Your submission has been received!
+  </div>
+  }
+</div>

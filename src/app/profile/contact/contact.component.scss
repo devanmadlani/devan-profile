@@ -1,0 +1,47 @@
+$small: 300px;
+$medium: 900px;
+.contact-form {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  @media (min-width: $medium) {
+    width: 60%;
+  }
+  &--title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+  &--sucess {
+    width: 100%;
+    background: #d7f1c2;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+  }
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+::ng-deep .mat-mdc-text-field-wrapper {
+  border-bottom-left-radius: 15px 255px !important;
+  border-bottom-right-radius: 225px 15px !important;
+  border-top-left-radius: 255px 15px !important;
+  border-top-right-radius: 15px 225px !important;
+  border: 1px solid;
+}
+.button-container {
+  display: flex;
+  justify-content: end;
+  button {
+    background: #d7e8fa;
+  }
+}
